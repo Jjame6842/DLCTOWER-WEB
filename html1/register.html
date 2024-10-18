@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+
+            <form action="register" method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <input type="text" id="username" name="username" placeholder="username" required>
+                <input type="password" id="password1" name="password1" placeholder="password" required>
+                <input type="password" id="password2" name="password2" placeholder="confirm password" required>
+                <input type="text" id="displayname" name="displayname" placeholder="Display Name" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="login" method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" id="username" name="username" placeholder="username" required>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </div>
+
+
+        
+
+    
+    
+</body>
+</html>

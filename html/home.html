@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/stylefeed.css">
+    <script type="text/javascript" src="js/comment.js"></script>
+
+
+    <title>home</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="browsePic" onclick="browseFile()">
+            <div id="displayPic">
+                <img src="img/avatar.png" alt="Profile Picture">
+            </div>
+            <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                <input type="file" id="fileField" name="avatar" value="fileToUpload" style="display: none;" onchange="displayFileName()">
+            </form>    
+            <div class="button-container">
+                <a href="http://127.0.0.1:5500/DLCTower/index.html" target="_blank" class="styled-button">PLAY!!</a>
+            </div>
+
+            <div class="button-container">
+            <a href="/logout" id="postmsg">LOG OUT</a> 
+            </div>
+
+        </div>
+        <div id="posting">
+            <textarea name="msg" id="textmsg" placeholder="Write your post..." rows="4"></textarea>
+            <br>
+            <button id="postbutton">Post</button>
+            <hr>
+            <div id="comment-container">
+                <!-- Comment content goes here -->
+            </div>
+        </div>
+
+        <div id="leaderboard-container">
+            <!-- Leaderboard content goes here -->
+        </div>
+    </div>
+</body>
+
+
+</html>
